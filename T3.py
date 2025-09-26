@@ -1,5 +1,6 @@
 from collections import defaultdict
-
+import time
+start = time.time()     #run counting
 
 def ip_parse(line):
 
@@ -21,7 +22,5 @@ with open("sample_auth_small.log") as f:
                 counts[ip] += 1
 print(counts)
 
-import time
-start = time.time()     #run counting
 end = time.time()
 print("Elapsed:", end-start, "seconds")
